@@ -37,10 +37,15 @@ body {
 
 header {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 header h1 a {
@@ -62,7 +67,7 @@ nav, ul {
     display: flex;
     align-items: center;
     justify-content:center;
-    padding: 10px
+    padding: 10px;
 }
 
 nav, ul, li {
@@ -75,11 +80,15 @@ nav, ul, li, a {
     font-weight: 400;
 }
 
+nav, ul, li, a:hover {
+    color: #615b56;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 150px auto;
+    margin: 220px auto;
     max-width: 1200px;
     width: 100%;
 }
@@ -127,6 +136,77 @@ nav, ul, li, a {
     background-color: #bd7a2a;
 }
 
+.mobile  {
+    display: none;
+}
+
+
+.hamburguer {
+    width: 35px;
+    height: 35px;
+  
+    background-color: #fff;
+  
+    border-radius: 10%;
+  
+    position: relative;
+}
+  
+  .hamburguer:after {
+    content: "";
+  
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  
+    width: 70%;
+    height: 10%;
+  
+    border-radius: 20px;
+  
+    background-color: #333;
+  
+    transition: 1s ease;
+  }
+  
+  .hamburguer:before {
+    content: "";
+  
+    position: absolute;
+    top: 60%;
+    left: 45%;
+  
+    width: 45%;
+    height: 10%;
+  
+    border-radius: 20px;
+  
+    background-color: #333;
+  
+    transition: 1s ease;
+  }
+  
+  #hamburguer:checked ~ label .hamburguer:after {
+    transform: rotate(225deg);
+  
+    width: 70%;
+    height: 10%;
+  
+    top: 45%;
+    left: 15%;
+  }
+  
+  #hamburguer:checked ~ label .hamburguer:before {
+    transform: rotate(-225deg);
+  
+    width: 70%;
+    height: 10%;
+  
+    top: 45%;
+    left: 15%;
+  }
+  
+
 
 @media (max-width: 1040px) {
     .container {
@@ -164,8 +244,19 @@ nav, ul, li, a {
     }
 }
 
-@media (max-width: 468px) {
-    .nav {
+@media (max-width: 510px) {
+
+
+    .nav  {
         display: none;
     }
+    .mobile  {
+        display: block;
+        z-index: 999;
+    }
+
+    .logo {
+        display: block;
+    }
+  
 }
