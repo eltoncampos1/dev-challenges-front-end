@@ -266,7 +266,6 @@ header button:hover {
     margin: 2rem;
     border-radius: 10px;
     width: 550px;
-    height: 150px;
 
     padding: 2.5rem;
 }
@@ -302,10 +301,13 @@ footer {
     align-items: center;
     color: #000;
     background-color: #ccc;
-    height: 15rem;
 
+    width: 100%;
     padding: 0 2rem;
     border-radius: 3px;
+
+    margin-top: 4rem;
+    
 }
 
 footer h1 {
@@ -346,4 +348,169 @@ footer a {
 .social-logos {
     display: flex;
     justify-content: space-between;
+}
+
+
+@media (max-width: 1068px) {
+    .input {
+        align-items: center;
+    }
+
+    .input button {
+        width: 25rem;
+        margin-left: 0;
+
+    }
+}
+
+
+@media (max-width: 1040px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 920px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    header {
+        justify-content:center;
+    }
+
+
+    header .menu ul li {
+        padding: 0 5px;
+    }
+
+    header button {
+        width: 14rem;
+        height: 4rem;
+    }
+
+    .services img {
+        width:25rem;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    footer h1 {
+        font-size: 2rem;
+    }
+
+    footer h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+}
+
+
+@media (max-width: 850px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+
+    .description {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description img {
+        margin-bottom: 5rem;
+    }
+
+    .left {
+        margin-right: 0;
+    }
+
+    .services-description  {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .input input {
+        width: 19rem;
+        margin-right: 1rem;
+    }
+
+    .input button {
+        width: 19rem;
+    }
+
+    .description img {
+        width:30rem;
+    }
+
+    .code-img {
+        align-self: flex-end;
+    }
+
+    .checked-list {
+        align-self: flex-end;
+        margin: 3rem;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .description {
+        max-width: 600px;
+        margin: 20rem 0;
+    }
+
+    .cards {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:570px) {
+    .card {
+        width: 400px;
+        margin: 1rem auto;
+    }
+
+    header li {
+        margin: 0.4rem;
+    }
+
+    footer {
+        display: inline-block;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:530px) {
+    header button {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .services img {
+        margin-left: 3rem;
+    }
 }
