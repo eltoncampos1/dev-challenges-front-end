@@ -71,8 +71,8 @@ header .menu ul li a:hover {
 }
 
 header button {
-    width: 180px;
-    height: 40px;
+    width: 18rem;
+    height: 4rem;
     border-radius: 12px;
     background-color: #D6000D;
     color: #fff;
@@ -92,14 +92,14 @@ header button:hover {
     max-width: 970px;
     align-items: center;
     justify-content: center;
-    margin: 230px 50px;
+    margin: 23rem 5rem;
 
     text-align: center;
 }
 
 
 .left {
-    width: 450px;
+    width: 45rem;
     margin-right: 7.5rem;
 }
 
@@ -124,8 +124,8 @@ header button:hover {
 }
 
 .right button {
-    width: 250px;
-    height: 50px;
+    width: 25rem;
+    height: 5rem;
     border-radius: 12px;
     background-color: #D6000D;
     color: #fff;
@@ -137,4 +137,106 @@ header button:hover {
 
 .right button:hover {
     background-color:#a3000a;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.services ul  {
+    list-style: none;
+}
+
+.services ul li {
+    font-size: 2.3rem;
+    margin: 2.1rem;
+}
+
+.services ul li span {
+    display: inline-block;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    background-color: #D6000D;
+    color: #fff;
+    font-weight: 700;
+    padding: 2px 6px;
+    margin-right: 3rem;
+}
+
+.services-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+.checked-list {
+    margin-right: 9rem;
+}
+
+.code-img {
+    width: 50rem;
+    align-self: flex-start;
+}
+
+.code-img img {
+    width: 100%;
+}
+
+
+.contact h2 {
+    font-size: 2.3rem;
+    margin: 1.5rem;
+}
+
+.contact input {
+    width: 25rem;
+    height: 5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #ccc;
+    padding-left: 1.5rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+}
+
+.contact button {
+    width: 21rem;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: #D6000D;
+    border: none;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+.contact button:hover {
+    background-color:#a3000a;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+    margin-top: 7rem;
+    padding-top: 5rem;
+}
+
+.input {
+    padding: 2rem;
 }
