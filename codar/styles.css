@@ -28,7 +28,10 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
+    background:rgba(255,255,255, 0.3);
+    margin: 0 auto;
+
+    position: fixed;
 }
 
 header .logo h1 {
@@ -100,7 +103,7 @@ header button:hover {
 
 .left {
     width: 45rem;
-    margin-right: 7.5rem;
+    margin-right: 9rem;
 }
 
 .left img {
@@ -110,6 +113,7 @@ header button:hover {
 .right {
     padding-right: 2rem;
     padding-right: 2rem;
+    margin-left: 7rem;
 }
 
 .right p {
@@ -144,6 +148,7 @@ header button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 
@@ -180,7 +185,7 @@ header button:hover {
 }
 
 .code-img {
-    width: 50rem;
+    width: 45rem;
     align-self: flex-start;
 }
 
@@ -239,4 +244,106 @@ header button:hover {
 
 .input {
     padding: 2rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    padding: 1rem;
+    background-color: #ccc;
+    margin: 2rem;
+    border-radius: 10px;
+    width: 550px;
+    height: 150px;
+
+    padding: 2.5rem;
+}
+
+.card .profile {
+    width: 7rem;
+    height: 7rem;
+    background-color: #D6000D;
+    border-radius: 50%;
+
+    padding: 3rem;
+    margin-right: 1.7rem;  
+}
+
+.card h2 {
+    font-size: 2.2rem;
+}
+
+.card p {
+    font-size:1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.card strong {
+    font-size: 1.2rem;
+} 
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    background-color: #ccc;
+    height: 15rem;
+
+    padding: 0 2rem;
+    border-radius: 3px;
+}
+
+footer h1 {
+    font-size:3rem;
+    line-height: 1.5;
+}
+
+footer h2 {
+    font-size:2rem;
+    line-height: 1.5;
+}
+
+footer p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 0.5rem
+}
+
+footer a {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.socials img {
+    width: 3rem;
+    height: 3rem;
+
+    margin: 5px;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: space-between;
 }
